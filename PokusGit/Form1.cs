@@ -41,5 +41,17 @@ namespace PokusGit
             double soucin = a * b;
             MessageBox.Show("Součin je " + soucin.ToString());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double a = int.Parse(textBox1.Text);
+            double b = int.Parse(textBox2.Text);
+            if (b != 0)
+            {
+                double podil = a / b;
+                MessageBox.Show("Podíl je je " + podil.ToString());
+            }
+            else MessageBox.Show("Nulou nelze dělit");
+        }
     }
 }
