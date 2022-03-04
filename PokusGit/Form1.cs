@@ -25,5 +25,13 @@ namespace PokusGit
             MessageBox.Show("Součet je " + soucet.ToString());
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double a = int.Parse(textBox1.Text);
+            double b = int.Parse(textBox2.Text);
+            double rozdil = a - b;
+            MessageBox.Show("Rozdíl je " + rozdil.ToString());
+        }
     }
 }
