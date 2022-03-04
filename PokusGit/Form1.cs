@@ -33,5 +33,13 @@ namespace PokusGit
             double rozdil = a - b;
             MessageBox.Show("Rozdíl je " + rozdil.ToString());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double a = int.Parse(textBox1.Text);
+            double b = int.Parse(textBox2.Text);
+            double soucin = a * b;
+            MessageBox.Show("Součin je " + soucin.ToString());
+        }
     }
 }
