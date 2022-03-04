@@ -40,5 +40,17 @@ namespace PokusGit
         {
             MessageBox.Show("Jakub Hutař", "ITA2");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int cislo = int.Parse(textBox3.Text);
+            long faktorial = 1;
+
+            for (int i = cislo; i > 0; i--)
+            {
+                faktorial *= i;
+            }
+            MessageBox.Show(faktorial.ToString());
+        }
     }
 }
