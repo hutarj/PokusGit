@@ -35,5 +35,10 @@ namespace PokusGit
             }
             else MessageBox.Show("Nulou nelze dělit");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jakub Hutař", "ITA2");
+        }
     }
 }
