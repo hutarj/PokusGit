@@ -52,5 +52,20 @@ namespace PokusGit
             }
             MessageBox.Show(faktorial.ToString());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int zaklad = int.Parse(textBox4.Text);
+            int exponent = int.Parse(textBox5.Text);
+            double mocnina = 1;
+            int exponentPuvodni = Math.Abs(exponent);
+            for (int i = 0; i < exponentPuvodni; i++)
+            {
+                mocnina *= zaklad;
+            }
+            if (exponent < 0) mocnina = 1 / mocnina;
+
+            MessageBox.Show("Mocnina je " + mocnina.ToString());
+        }
     }
 }
